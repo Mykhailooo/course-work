@@ -84,7 +84,7 @@ nav{
 .header_menu-item_ua{
     color: var(--black, #000);
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
+    font-family: "Regular-Raleway";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -129,7 +129,7 @@ select{
     color: var(--black, #000);
     text-align: center;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
+    font-family: "Regular-Raleway";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -194,12 +194,13 @@ label{
 .size{
     color: #000;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: 166.4%;
 }
+
 .input-wrapper{
     display: flex;
     align-items: center;
@@ -208,7 +209,7 @@ label{
 .grid_content_left_top{
     color: #565656;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
+    font-family: "Regular-Raleway";
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
@@ -218,11 +219,6 @@ label{
     
 }
 
-.grid_content_center_top{
-
-}
-
-
 .grid_layout{
     width: 14px;
     height: 14px;
@@ -231,7 +227,7 @@ label{
 
 .forest{
     background-image: url(icons_images/forest.png);
-    padding-top: 87px;
+    padding-top: 76px;
     width: 507px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -250,7 +246,7 @@ label{
     padding-top: 50px;
     color: #565656;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
+    font-family: "Regular-Raleway";
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
@@ -260,15 +256,11 @@ label{
 .center_top_text2{
     color: #000;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
+    font-family: "Regular-Raleway";
     font-size: 12px;
     font-style: normal;
     font-weight: 300;
     line-height: 166.4%;
-}
-
-.grid_content_right_top{
-
 }
 
 .title_text{
@@ -294,7 +286,7 @@ label{
 .description_text{
     color: #000;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -305,28 +297,16 @@ label{
 .price{
     color: #000;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 166.2%;
 }
 
-.grid_content_left_middle{
-
-}
-
-.grid_content_center_middle{
-
-}
-
-.grid_content_right_middle{
-
-}
-
 .show_more{
     color: #000;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -346,7 +326,7 @@ label{
 .one{
     color: #B0B0B0;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -357,7 +337,7 @@ label{
 .next{
     color: #000;
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -394,7 +374,7 @@ label{
     padding-top: 30px;
     color: var(--black, #000);
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -410,7 +390,7 @@ label{
 .drabyna{
     color: var(--red, #DA1F39);
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: 'Raleway';
+    font-family: 'Regular-Raleway';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
