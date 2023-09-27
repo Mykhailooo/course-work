@@ -1,18 +1,16 @@
 @font-face {
-    font-family: 'Regular' ;
-    src: url(Fonts/DelaGothicOne-Regular.eot) format('eot'),
-    url(Fonts/DelaGothicOne-Regular.ttf) format('ttf'),
-    url(Fonts/DelaGothicOne-Regular.woff) format('woff'),
-    url(Fonts/DelaGothicOne-Regular.woff2) format('woff2');
+    font-family: 'Regular-Raleway';
+    src: url("Fonts/Raleway-Regular.eot") format('eot'),
+    url("Fonts/Raleway-Regular.ttf") format('ttf'),
+    url("Fonts/Raleway-Regular.woff") format('woff');
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: url(Fonts/Raleway-ThinItalic.eot) format('eot'),
-    url(Fonts/Raleway-MediumItalic.eot) format('eot'),
-    url(Fonts/Raleway-MediumItalic.ttf) format('ttf'),
-    url(Fonts/Raleway-MediumItalic.woff) format('woff');
-    
+    font-family: 'Delagothicone';
+    src: url("Fonts/DelaGothicOne-Regular.eot") format('eot'),
+    url("Fonts/DelaGothicOne-Regular.ttf") format('ttf'),
+    url("Fonts/DelaGothicOne-Regular.woff") format('woff'),
+    url("Fonts/DelaGothicOne-Regular.woff2") format('woff2');
 }
 
    
@@ -43,7 +41,7 @@ nav{
 .catalog_text{
     color: var(--red, #DA1F39);
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: Raleway;
+    font-family: "Regular-Raleway";
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -58,7 +56,7 @@ nav{
 .header_menu-item1{
     color: var(--black, #000);
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
+    font-family: "Regular-Raleway";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -156,20 +154,7 @@ select{
 
 .section{
     width: 1440px;
-}
-
-.section_text{
-    color: var(--black, #000);
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 166.4%;
-    font-weight: bold;
     padding-left: 79px;
-    padding-top: 20px;
-    padding-bottom: 40px;
 }
 
 .section_img{
@@ -180,29 +165,21 @@ select{
     padding-bottom: 3px;
 }
 
-.section_text2{
-    color: var(--black, #000);
-    font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 166.4%;
-    font-weight: bold;
-    padding-top: 10px;
+.section .section_text_gray{
+    color: gray;
 }
 
-.section_text3{
+.section a{
     color: var(--black, #000);
     font-variant-numeric: lining-nums proportional-nums;
-    font-family: "Raleway";
+    font-family: "Regular-Raleway";
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: 166.4%;
-    font-weight: lighter;
-    padding-top: 10px;
+    text-decoration: none;
 }
+
 
 .container_grid{
     display: grid;
@@ -297,7 +274,7 @@ label{
 .title_text{
     display: inline-block;
     color: #000;
-    font-family: "Dela Gothic One";
+    font-family: "Delagothicone";
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
