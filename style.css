@@ -78,6 +78,11 @@ nav{
     padding-right: 60px;
 }
 
+.header_menu-item_right{
+    display: flex;
+    justify-content: space-between;
+}
+
 .header_menu-item_ua{
     color: var(--black, #000);
     font-variant-numeric: lining-nums proportional-nums;
@@ -86,9 +91,12 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 220px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 205px;
+}
+
+.header_menu-item_currency{
+    font-size: 22px;
+    padding-left: 15px;
 }
 
 select{
@@ -235,6 +243,13 @@ label{
 
 .grid_content_center_top{
 
+}
+
+
+.grid_layout{
+    width: 14px;
+    height: 14px;
+    padding-top: 15px;
 }
 
 .forest{
