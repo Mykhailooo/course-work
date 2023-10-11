@@ -13,29 +13,55 @@
     url("Fonts/DelaGothicOne-Regular.woff2") format('woff2');
 }
 
-   
 
 *{
-    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
-    width: 1440px;
-    height: 99px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
 }
 
 .header_menu{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-items: center;
+    position: relative;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+.header_burger{
+    display: none;
+}
+
+.header_left{
+    display: flex;
+    gap: 20px;
+}
+
+.header_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.search_buy{
+    display: flex;
+    gap: 10px;
 }
 
 .catalog_text{
@@ -46,12 +72,8 @@ nav{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    width: 64px;
-    height: 19px;
-    padding-top: 40px;
-    padding-left: 79px;
-    padding-bottom: 40px;
 }
+
 
 .header_menu-item1{
     color: var(--black, #000);
@@ -61,24 +83,10 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    height: 19px;
-    padding-left: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .header_menu-item_middle{
-    width: 184px;
-    height: 48px;
-    padding-left: 248px;
-    padding-top: 25px;
-    padding-bottom: 26px;
-    padding-right: 60px;
-}
-
-.header_menu-item_right{
-    display: flex;
-    justify-content: space-between;
+    max-width: 184px;
 }
 
 .header_menu-item_ua{
@@ -89,12 +97,10 @@ nav{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 205px;
 }
 
 .header_menu-item_currency{
     font-size: 22px;
-    padding-left: 15px;
 }
 
 select{
@@ -103,26 +109,15 @@ select{
 
 .header_arrow1{
     width: 48px;
-    height: 4px;
-    padding-left: 5px;
-    padding-top: 58px;
-    padding-bottom: 40px;
 }
 
 .hryvnia_icon{
     width: 22px;
-    height: 22px;
-    padding-left: 20px;
-    padding-top: 38px;
-    padding-bottom: 39px;
+
 }
 
 .header_arrow2{
     width: 8px;
-    height: 4px;
-    padding-left: 5px;
-    padding-top: 48px;
-    padding-bottom: 47px;
 }
 
 .header_phone_number{
@@ -134,22 +129,21 @@ select{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
 
 }
 
+
+
 .header_search_icon{
-    padding-left: 20px;
-    padding-top: 34px;
-    padding-bottom: 40px;
+
 }
 
 .header_cart_icon{
-    padding-left: 14px;
-    padding-top: 35px;
-    padding-bottom: 42px;
+
+}
+
+.mobile_body{
+    display: none;
 }
 
 .section{
@@ -184,7 +178,11 @@ select{
 .container_grid{
     display: grid;
     grid-template-columns: 340px 550px 550px;
-    grid-template-rows: 819px 630px 600px;
+    grid-template-rows: 670px 630px 600px;
+}
+
+.mobile_container_grid{
+    display: none;
 }
 
 label{
@@ -219,26 +217,22 @@ label{
     
 }
 
+.size{
+    padding-top: 10px;
+}
+
 .grid_layout{
     width: 14px;
-    height: 14px;
     padding-top: 15px;
 }
 
-.forest{
-    background-image: url(icons_images/forest.png);
-    padding-top: 76px;
-    width: 507px;
-    background-position: bottom;
-    background-repeat: no-repeat;
+.flex{
+    padding-bottom: 20px;
 }
 
-.forest_sweater{
-    width: 410px;
-    height: 400px;
-    padding-top: 66px;
-    padding-left: 49px;
-    padding-bottom: 40px;
+.wb_sweater{
+    width: 497px;
+    padding: 10px;
 }
 
 .center_top_text{
@@ -274,7 +268,6 @@ label{
     text-transform: uppercase;
     font-weight: bold;
     text-align: right;
-    width: 500px
 }
 
 .blue_sweater_img{
@@ -345,6 +338,22 @@ label{
     padding-left: 9px;
 }
 
+.mobile_footer_grid{
+    display: none;
+}
+
+.mobile_footer_logo{
+    display: none;
+}
+
+.mobile2_footer_grid{
+    display: none;
+}
+
+.mobile_show_more{
+    display: none;
+}
+
 .footer_container{
     width: 1510px;
     height: 354px;
@@ -360,8 +369,6 @@ label{
 }
 
 .footer_logo{
-    width: 184px;
-    height: 42px;
     padding-left: 660px;
     padding-top: 70px;
 }
@@ -402,3 +409,336 @@ label{
     padding-top: 25px;
 }
 
+
+
+
+@media screen and (max-width:385px) {
+    .header_menu{
+        padding: 25px 0;
+    }
+
+    .header_left{
+        display: none;
+    }
+
+    .header_menu-item_middle{
+        max-width: 95px;
+    }
+
+    #language, #currency, .header_phone_number{
+        display: none;
+    }
+
+    .container_grid{
+        display: none;
+    }
+
+    .header_burger{
+        width: 20px;
+        height: 10px;
+        display: inline-block;
+        background-image: url("icons_images/burger.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        outline: none;
+    }
+
+    .mobile_menu{
+        max-width: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-color: white;
+        display: none;
+        padding: 20px;
+        filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25)) drop-shadow(6px 6px 8px rgba(71, 71, 71, 0.25));
+    }
+
+    .close_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 120px;
+        padding: 20px 0px;
+    }
+
+    .middle_menu{
+        display: flex;
+        flex-direction: column;
+        font-family: "Delagothicone";
+    }
+
+    .catalog_menu_text{
+        color: var(--red, #DA1F39);
+        font-family: "Delagothicone";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0px;
+    }
+
+    .arrow{
+        background-image: url("icons_images/scroll_down.png");
+        width: 20px;
+        height: 10px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 20px;
+    }
+
+    .middle_menu_text{
+        color: var(--black, #000);
+        font-family: "Delagothicone";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0px;
+
+    }
+
+    .bottom_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .language_side{
+        color: var(--black, #000);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Regular-Raleway";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 30px 0px;
+    }
+
+    .currency_side{
+        font-size: 17px;
+        height: 22px;
+        padding: 0 25px;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .grid_content_left_top{
+        display: none;
+    }
+
+    .title_text{
+        display: none;
+    }
+
+    .section{
+        display: none;
+    }
+
+    .flex{
+        display: none;
+    }
+
+    .mobile_body{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 50px 50px;
+        padding: 0 10px;
+    }
+
+    .mobile_grid_top{
+        color: #000;
+        font-family: "Delagothicone";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140.3%;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .filter{
+        color: var(--black, #000);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Regular-Raleway";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.4%;
+        text-align: left;
+    }
+
+    .mobile_grid_bottom_text{
+        color: var(--black, #000);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Regular-Raleway";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.4%;
+        padding-left: 150px;
+    }
+    
+    .mobile_container_grid{
+        display: grid;
+        max-width: 360px;
+        margin: 0 auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 300px 300px 300px;
+        justify-content: center;
+    }
+
+
+    .mobile_wb_sweater{
+        width: 160px;
+        height: 200px;
+    }
+
+    .mobile_description_text{
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Regular-Raleway";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.4%;
+    }
+
+    .price{
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Regular-Raleway";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%;
+    }
+
+    .mobile_blue_sweater_img{
+        width: 180px;
+        height: 200px;
+    }
+
+    .mobile_red_sweater{
+        width: 160px;
+        height: 200px;
+    }
+
+    .mobile_brown_sweater{
+        width: 180px;
+        height: 200px;
+    }
+
+    .mobile_black_sweater{
+        width: 160px;
+        height: 200px;
+    }
+
+    .mobile_white_sweater{
+        width: 180px;
+        height: 200px;
+    }
+
+    .mobile_show_more{
+        display: flex;
+        padding-left: 65px;
+        align-items: center;
+        color: #000;
+        font-family: "Regular-Raleway";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .mobile_show_more_img{
+        padding-left: 5px;
+    }
+
+    .show_more{
+        display: none;
+    }
+
+    .footer_container{
+        display: none;
+    }
+
+    .mobile_footer_container{
+        max-width: 375px;
+        height: 470px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(icons_images/footer_background.png);
+    }
+
+    .logos{
+        padding-left: 10px;
+    }
+
+    .mobile_footer_logo{
+        width: 240px;
+        padding-top: 60px;
+        padding-left: 90px;
+    }
+
+    .mobile_footer_grid{
+        display: grid;
+        grid-template-columns: 90px 130px 130px;
+        grid-template-rows: 30px 30px 30px 30px;
+        color: var(--black, #000);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: 'Regular-Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.188%; 
+        padding-top: 100px;
+        padding-left: 14px;
+    }
+
+    .mobile_drabyna{
+        color: var(--red, #DA1F39);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: 'Regular-Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 166.2%;
+        padding-top: 10px;
+    }
+
+    .mobile2_footer_grid{
+        display: grid;
+        grid-template-rows: 30px 30px 30px 30px;
+        color: var(--black, #000);
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: 'Regular-Raleway';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 166.188%; 
+        padding-left: 14px;
+        padding-top: 15px;
+
+    }
+
+    .mobile_etnodim{
+        padding-top: 15px;
+    }
+
+    
+
+
+
+}
